@@ -5,12 +5,13 @@
 local M = {}
 
 M.ui = {
-	theme = "onedark",
-
+	theme = "catppuccin",
+  transparency = true,
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
 	-- },
 }
-
+M.plugins = "plugins"
+---@class M.mappings = require "configs.mappings"
 return M
