@@ -89,5 +89,10 @@ local plugins =  {
       require('configs.presence')
     end,
   },
+
+  {
+  'ThePrimeagen/vim-be-good',
+    lazy = false,
+ },
 }
 return plugins
