@@ -5,33 +5,33 @@ local plugins =  {
       require "configs.conform"
     end,
   },
- {
-     "neovim/nvim-lspconfig",
-     config = function()
-       require("nvchad.configs.lspconfig").defaults()
-       require "configs.lspconfig"
-     end,
-   },
- {
- 	"williamboman/mason.nvim",
- 	opts = {
- 		ensure_installed = {
-		"lua-language-server", "stylua","gopls",
- 			"html-lsp", "css-lsp" , "prettier",
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("nvchad.configs.lspconfig").defaults()
+      require "configs.lspconfig"
+    end,
+  },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server", "stylua","gopls",
+        "html-lsp", "css-lsp" , "prettier",
         "rust-analyzer",
-   		},
-   	},
-   },
+      },
+    },
+  },
 
   {
-  'nvim-treesitter/nvim-treesitter',
+    'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     opts = {
       ensure_installed = { 'bash', 'c', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc' },
       auto_install = true,
       highlight = {
         enable = true,
-       },
+      },
       indent = { enable = true},
     },
   },
@@ -79,7 +79,7 @@ local plugins =  {
       return require("configs.rusttools")
     end,
     config = function (_,opts)
-     require("rust-tools").setup(opts)
+      require("rust-tools").setup(opts)
     end,
   },
   {
@@ -91,9 +91,8 @@ local plugins =  {
   },
 
   {
-  'ThePrimeagen/vim-be-good',
+    'ThePrimeagen/vim-be-good',
     lazy = false,
- },
-{"ellisonleao/glow.nvim", config = true, cmd = "Glow"}
+  },
 }
 return plugins

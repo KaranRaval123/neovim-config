@@ -5,20 +5,15 @@
 local M = {}
 
 M.ui = {
-	theme = "tokyonight",
+	theme = "oxocarbon",
   transparency = true,
-  statusline = {
-  theme = "minimal",
-  separator_style = "round",
-  overriden_modules = nil,
-  },
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
 	-- },
 }
 M.base64 = {
-  theme = "tokyonight",
+  theme = "oxocarbon",
   integrations = {
     "blankline",
     "cmp",
